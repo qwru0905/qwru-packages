@@ -1,0 +1,19 @@
+{
+  "name": "qwru-packages",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w packages/types && npm run build -w packages/utils && npm run build -w packages/db",
+    "changeset": "changeset",
+    "version": "changeset version && npm install --package-lock-only",
+    "release": "npm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@cloudflare/workers-types": "^4.20250101.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  }
+}
