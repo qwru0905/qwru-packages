@@ -1,5 +1,5 @@
 {
-  "name": "@qwru0905/db",
+  "name": "@qwru/db",
   "version": "0.1.0",
   "type": "module",
   "main": "./dist/index.js",
@@ -21,7 +21,7 @@
     "build": "tsup src/index.ts --format esm --dts --clean"
   },
   "dependencies": {
-    "@qwru0905/types": "^0.1.0"
+    "@qwru/types": "^0.1.0"
   },
   "sideEffects": false
 }

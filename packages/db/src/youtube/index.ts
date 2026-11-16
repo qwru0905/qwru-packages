@@ -1,4 +1,4 @@
-import type { YoutubeProfile, YoutubeVideo } from "@qwru0905/types";
+import type { YoutubeProfile, YoutubeVideo } from "@qwru/types";
 
 interface VideoRow {
   id: number;
