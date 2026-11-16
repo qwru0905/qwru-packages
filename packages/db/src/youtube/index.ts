@@ -67,3 +67,14 @@ export async function getProfileByExtID(
     .bind(ext_id)
     .first<YoutubeProfile>();
 }
+
+export async function createProfile(
+  db: D1Database,
+  code: string,
+  ext_id: string,
+  name: String
+) {
+  return db.prepare("INSERT INTO youtube_profiles (code, ext_id, name) VALUE (?, ?, ?) RETURNING *")
+    .bind(code, ext_id, name)
+    .first<YoutubeProfile>();
+}
