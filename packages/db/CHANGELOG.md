@@ -1,5 +1,11 @@
 # @qwru/db
 
+## 0.1.3
+
+### Patch Changes
+
+- Add getProfiles
+
 ## 0.1.2
 
 ### Patch Changes
