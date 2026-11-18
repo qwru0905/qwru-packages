@@ -1,5 +1,11 @@
 # @qwru/db
 
+## 0.1.4
+
+### Patch Changes
+
+- add discord export in route
+
 ## 0.1.3
 
 ### Patch Changes
